@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../myproject"
+		},
+		{
+			"path": "../Building Portfolio"
+		},
+		{
+			"path": "../ExerciseProject"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Contact Information"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Blog Website"
+	}
+}

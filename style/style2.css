@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    background-image: url(../img/bg-try.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: center;
+    padding: 100px 150px 150px 150px;
+    font-family: Black ops system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: ghostwhite;
+    font-size: 1.7em;
+    letter-spacing: 25px;
+}
+
+.nav-container {
+    background-color: navy;
+}
+
+.left-menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu li {
+float: left;
+}
+
+.left-menu a {
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    color:gold;
+    padding: 12px 40px;
+    text-decoration: none;
+    border-right: 1px solid silver;
+    cursor: pointer;
+    transition: background-color .5s, color .5s;
+
+
+}
+.left-menu li:last-child {
+    border: none;
+}
+
+.left-menu a:hover {
+    background-color:gold;
+    color: navy;
+ 
+
+}
+
+.left-menu a:active {
+   opacity: 0.7;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+}
+
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    height: 405vh;
+    max-width: 100%;
+    border: 3px ridge gold;
+    margin: 25px;
+}
+
+
+ .latest-post {
+    border: 4px transparent;
+    box-shadow: 5px 5px 5px 5px gray;
+    max-width: 80%;
+    height: 190vh;
+    margin: 125px 15px 125px 180px;
+    
+}
+
+.popular-heading {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: Roboto mono;
+    padding: 60px 0 0 0;
+    font-weight: bold;
+    border-bottom: 2px solid navy;
+    margin: 0 280px;
+}
+
+ .latest-heading {
+    font-size: 1.4em;
+    margin-left: 46px;
+    padding: 125px 5px 16px 0;
+    font-family: Roboto mono;
+    font-weight: bold;
+}
+
+.latest-post img{
+    height: 700px;
+    width: 1100px;
+    border: 2px solid rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+
+
+}
+
+ 
+.latest-post figure{
+
+    padding: 60px 50px 60px 50px;
+}
+
+.popular-post {
+    text-indent: 150px;
+    margin: 20px 70px 50px 33px;
+    font-family: Rubik;
+    padding: 10px 50px 80px 50px;
+    font-size: 1.2em;
+    line-height: 55px;
+    word-spacing: 5px;
+    border: none;
+}
+
+
+
+.about-myself {
+    background-image: url(../img/bg-about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    max-width: 80%;
+    height: 550px;
+    margin: 125px 15px 125px 180px;
+    border: 3px transparent;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 150px;
+    
+}
+
+.about-heading {
+    text-align: center;
+    padding: 25px 35px 0 35px;
+    font-size: 1.5em;
+    font-family: Roboto mono;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color:navy;
+    border-bottom: 2px solid gold;
+    margin: 25px 400px;
+
+}
+
+.about-content {
+    padding: 40px 50px;
+    font-size: 1.2em;
+    font-family: Rubik;
+    line-height: 30px;
+    word-spacing: 1px;
+   
+}
+
+.about-img img {
+    border: 2px ridge gray;
+    float: right;
+    height: 350px;
+    max-width: 440px;
+    margin: 0 80px;
+}
+
+.social-media {
+    clear: both;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media a > ion-icon{
+    color:#011E11;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 30px;
+  }
+
+  .social-media a:hover > ion-icon {
+    color: white;
+    font-size: 30px ;
+  }
+
+
+  .comment-section {
+    clear: both;
+    background-image: url(../img/bg-comment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 80%;
+    border: 3px transparent;
+    box-shadow: 5px 5px 5px gray;
+    height: 420px;
+    margin: 125px 15px 125px 180px;
+
+  }
+.comment-section-heading {
+    text-align: center;
+    padding: 25px 25px 0 25px;
+    font-size: 1.5em;
+    font-family: Roboto mono;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color:navy;
+    border-bottom: 2px solid gold;
+    margin: 0 500px;
+}
+
+.numberofcomment {
+    display: inline;
+    font-size: 1.3em;
+    margin-left: 45px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.updatedcomment {
+    display: inline;
+    float: right;
+    padding-right: 45px;
+    margin-right: 45px;
+}
+
+.updatedcomment a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: black;
+}
+
+.comment-box label{
+    margin-left: 48px;
+    padding: 15px;
+}
+
+.comment-box textarea {
+    margin-left: 180px;
+}
+
+input[type="submit"] {
+    margin-left: 1100px;
+    margin-top:25px;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: 5px 5px 5px white;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    transition: background-color .5s, color .5s;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+
+input[type="submit"]:active {
+    opacity: .7;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 95px;
+}
+
+.footer img {
+    height: 150px;
+    width: 120px;
+    border: 3px double gold;
+    border-radius: 17px;
+}
+
+.footer a {
+    position: absolute;
+    right: 50px;
+    top: 3950px;
+    border-radius: 7px;
+   
+}
+
+.footer img:hover{
+    border: none;
+    padding: 10px;
+    border: 3px double navy;
+    border-radius: 17px;
+}
+
+.footer img:active {
+    opacity: 0.5;
+}

@@ -1,0 +1,766 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    background-image: url(img/bg-try.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: center;
+    padding: 100px 150px 150px 150px;
+    font-family: Black ops system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: ghostwhite;
+    font-size: 1.7em;
+    letter-spacing: 25px;
+}
+
+.nav-container {
+    background-color: navy;
+}
+
+.left-menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu li {
+float: left;
+}
+
+.left-menu a {
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    color:gold;
+    padding: 12px 40px;
+    text-decoration: none;
+    border-right: 1px solid silver;
+    cursor: pointer;
+    transition: background-color .5s, color .5s;
+
+
+}
+.left-menu li:last-child {
+    border: none;
+}
+
+.left-menu a:hover {
+    background-color:gold;
+    color: navy;
+ 
+
+}
+
+.left-menu a:active {
+   opacity: 0.7;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+}
+
+.right-menu {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 350px;
+}
+
+
+.right-menu i ion-icon {
+    border: none;
+    padding: none;
+    font-size: 50px;
+    color:gold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color .5s, color .5s;
+}
+
+.right-menu i  ion-icon:hover {
+    background-color: gold;
+    color: navy;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+}
+
+.drop-down-list {
+    display: none;
+    min-width: 190px;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.575);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    
+}
+
+.drop-down-list a {
+    text-decoration: none;
+    padding: 26px 3px;
+    display: block;
+    transition: background-color .5s, color .5s;
+    color: navy;
+}
+
+.drop-down-list a:visited {
+    color: orangered;
+}
+
+
+
+.drop-down-list a:hover {
+    color: gold;
+    background-color: rgba(128, 128, 128, 0.521);
+}
+
+.drop-down-list a:active {
+
+    opacity: .7;
+}
+
+.right-menu:hover .drop-down-list {
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border-top: 3px solid gold;
+    border-left: 3px solid gold;
+    max-width: 100%;
+    height: 630vh;
+    margin: 15px;
+}
+
+.main-content {
+    height: 626vh;
+    max-width: 60%;
+    border: none;
+    margin: 10px 0 10px 10px;
+}
+
+
+.main-content .main-content-heading {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Roboto mono;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 55px 15px 3px 15px;
+    margin: 0 300px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid navy ;
+}
+
+.main-content .first-latestpost {
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+    max-width: 1150px;
+    height: 190vh;
+    margin: 15px 70px 105px 70px;
+    
+}
+
+.main-content .global-section-heading {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: Roboto mono;
+    padding: 60px 0 0 0;
+    font-weight: bold;
+    border-bottom: 2px solid navy;
+    margin: 0 280px;
+}
+
+.main-content .first-heading {
+    font-size: 1.4em;
+    margin-left: 46px;
+    padding: 125px 5px 16px 0;
+    font-family: Roboto mono;
+    font-weight: bold;
+}
+
+.main-content .first-latestpost img{
+    height: 600px;
+    width: 900px;
+    border: 2px solid rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+
+}
+
+ 
+.main-content .first-latestpost figure{
+
+    padding: 60px 50px 60px 0;
+}
+
+.main-content .first-post {
+    text-indent: 150px;
+    margin: 20px 70px 50px 33px;
+    font-family: Rubik;
+    padding:10px 50px 80px 10px;
+    font-size: 1.2em;
+    line-height: 55px;
+    word-spacing: 5px;
+    border: none;
+}
+
+.main-content .second-latestpost {
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+    max-width: 1150px;
+    height: 190vh;
+    margin: 15px 70px 105px 70px;
+}
+    
+.main-content .local-section-heading {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: Roboto mono;
+    padding: 80px 0 0 0;
+    font-weight: bold;
+    border-bottom: 2px solid navy;
+    margin: 0 350px;
+}
+
+.main-content .second-heading {
+    font-size: 1.4em;
+    margin-left: 46px;
+    padding: 125px 5px 16px 0;
+    font-family: Roboto mono;
+    font-weight: bold;
+}
+
+
+.main-content .second-latestpost img{
+    height: 600px;
+    width: 900px;
+    border: 2px solid rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+
+}
+
+.main-content .second-latestpost figure{
+
+    padding: 60px 80px 60px 0;
+}
+
+.main-content .second-post {
+    text-indent: 150px;
+    margin: 20px 70px 50px 33px;
+    font-family: Rubik;
+    padding:10px 50px 40px 10px;
+    font-size: 1.2em;
+    line-height: 55px;
+    word-spacing: 5px;
+    border: none;
+}
+
+.main-content .third-latestpost {
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+    max-width: 1150px;
+    height: 190vh;
+    margin: 15px 70px 105px 70px;
+
+}
+
+.main-content .all-aboutNBA-heading {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: Roboto mono;
+    padding: 80px 0 0 0;
+    font-weight: bold;
+    border-bottom: 2px solid navy;
+    margin: 0 400px;
+}
+
+.main-content .third-heading {
+    font-size: 1.4em;
+    margin-left: 46px;
+    padding: 125px 5px 16px 0;
+    font-family: Roboto mono;
+    font-weight: bold;
+}
+
+.main-content .third-latestpost img{
+    height: 600px;
+    width: 900px;
+    border: 2px solid rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+
+}
+
+.main-content .third-latestpost figure{
+
+    padding: 60px 80px 60px 0;
+}
+
+.main-content .third-post {
+    border: none;
+    text-indent: 150px;
+    margin: 20px 70px 45px 33px;
+    font-family: Rubik;
+    padding:10px 50px 60px 10px;
+    font-size: 1.2em;
+    line-height: 55px;
+    word-spacing: 5px;
+}
+
+.sidebar-post-container {
+    height: 395vh;
+    max-width: 30%;
+    border: 3px ridge navy;
+    margin: 35px 5px 35px 145px;
+}
+
+.sidebar-post-container .sidebar-post-heading {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: Roboto mono;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 25px 15px 3px 15px;
+    margin: 15px 90px 15px 90px;
+    border-bottom: 2px solid navy ;
+}
+
+
+
+.first-popular-post {
+    margin: 110px 35px 0 35px;
+    padding: 45px 25px 30px 25px;
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+}
+
+.first-popular-post h3{ 
+
+    text-align: center;
+    font-family: Roboto mono;
+    font-size: 1.1em;
+
+}
+
+.first-popular-post a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.first-popular-post a:active {
+    color: black;
+}
+
+.first-popular-post a:hover {
+    color: navy;
+}
+
+.first-popular-post img {
+    width: 395px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.first-popular-post p {
+    text-indent: 50px;
+    font-size: 1.2em;
+    font-family: rubik;
+    word-spacing: 3px;
+    line-height: 23px;
+    
+}
+
+.second-popular-post {
+    margin: 110px 35px 0 35px;
+    padding: 45px 25px 30px 25px;
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+}
+
+.second-popular-post h3{ 
+
+    text-align: center;
+    font-family: Roboto mono;
+    font-size: 1.1em;
+
+}
+
+.second-popular-post a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.second-popular-post a:active {
+    color: black;
+}
+
+.second-popular-post a:hover {
+    color: navy;
+}
+
+.second-popular-post img {
+    width: 395px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.second-popular-post p {
+    text-indent: 50px;
+    font-size: 1.2em;
+    font-family: rubik;
+    word-spacing: 3px;
+    line-height: 23px;
+    
+}
+
+.third-popular-post {
+    margin: 110px 35px 0 35px;
+    padding: 45px 25px 30px 25px;
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+}
+
+.third-popular-post h3{ 
+
+    text-align: center;
+    font-family: Roboto mono;
+    font-size: 1.1em;
+
+}
+
+.third-popular-post a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.third-popular-post a:active {
+    color: black;
+}
+
+.third-popular-post a:hover {
+    color: navy;
+}
+
+.third-popular-post img {
+    width: 395px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.third-popular-post p {
+    text-indent: 50px;
+    font-size: 1.2em;
+    font-family: rubik;
+    word-spacing: 3px;
+    line-height: 23px;
+    
+}
+
+.fourth-popular-post {
+    margin: 110px 35px 0 35px;
+    padding: 45px 25px 30px 25px;
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+}
+
+.fourth-popular-post h3{ 
+
+    text-align: center;
+    font-family: Roboto mono;
+    font-size: 1.1em;
+
+}
+
+.fourth-popular-post a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.fourth-popular-post a:active {
+    color: black;
+}
+
+.fourth-popular-post a:hover {
+    color: navy;
+}
+
+.fourth-popular-post img {
+    width: 395px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.fourth-popular-post p {
+    text-indent: 50px;
+    font-size: 1.2em;
+    font-family: rubik;
+    word-spacing: 3px;
+    line-height: 23px;
+    
+}
+
+.fifth-popular-post {
+    margin: 110px 35px 0 35px;
+    padding: 45px 25px 30px 25px;
+    border: 5px transparent;
+    box-shadow: 5px 5px 5px 5px rgba(218, 218, 219, 0.842);
+}
+
+.fifth-popular-post h3{ 
+
+    text-align: center;
+    font-family: Roboto mono;
+    font-size: 1.1em;
+
+}
+
+.fifth-popular-post a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.fifth-popular-post a:active {
+    color: black;
+}
+
+.fifth-popular-post a:hover {
+    color: navy;
+}
+
+.fifth-popular-post img {
+    width: 395px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.fifth-popular-post p {
+    text-indent: 50px;
+    font-size: 1.2em;
+    font-family: rubik;
+    word-spacing: 3px;
+    line-height: 23px;
+    
+}
+
+
+.second-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    border-right : 3px solid gold;
+    border-bottom: 3px solid gold;
+    height: 140vh;
+    margin: 15px;
+    max-width: 100%;
+}
+
+.about-myself {
+    background-image: url(img/bg-about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    max-width: 100%;
+    height: 500px;
+    margin: 30px 120px;
+    border: 3px transparent;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 150px;
+    
+}
+
+.about-heading {
+    text-align: center;
+    padding: 25px 35px 0 35px;
+    font-size: 1.5em;
+    font-family: Roboto mono;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color:navy;
+    border-bottom: 2px solid gold;
+    margin: 25px 500px;
+
+}
+
+.about-content {
+    padding: 40px 50px;
+    font-size: 1.2em;
+    font-family: Rubik;
+    line-height: 30px;
+    word-spacing: 1px;
+   
+}
+
+.about-img img {
+    border: 2px ridge gray;
+    float: right;
+    height: 350px;
+    max-width: 440px;
+    margin: 0 75px;
+}
+
+.social-media {
+    clear: both;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media a > ion-icon{
+    color:#011E11;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 30px;
+  }
+
+  .social-media a:hover > ion-icon {
+    color: white;
+    font-size: 30px ;
+  }
+
+  .comment-section {
+    clear: both;
+    background-image: url(img/bg-comment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    border: 3px transparent;
+    box-shadow: 5px 5px 5px gray;
+    height: 420px;
+    margin: 45px 120px;
+
+  }
+.comment-section-heading {
+    text-align: center;
+    padding: 25px 25px 0 25px;
+    font-size: 1.5em;
+    font-family: Roboto mono;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color:navy;
+    border-bottom: 2px solid gold;
+    margin: 0 550px;
+}
+
+.numberofcomment {
+    display: inline;
+    font-size: 1.3em;
+    margin-left: 45px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.updatedcomment {
+    display: inline;
+    float: right;
+    padding-right: 45px;
+    margin-right: 45px;
+}
+
+.updatedcomment a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: black;
+}
+
+.comment-box label{
+    margin-left: 48px;
+    padding: 15px;
+}
+
+.comment-box textarea {
+    margin-left: 180px;
+}
+
+input[type="submit"] {
+    margin-left: 1170px;
+    margin-top:25px;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: 5px 5px 5px white;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    transition: background-color .5s, color .5s;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+
+input[type="submit"]:active {
+    opacity: .7;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 95px;
+}
+
+.footer img {
+    height: 150px;
+    width: 120px;
+    border: 3px double gold;
+    border-radius: 7px;
+}
+
+.footer a {
+    position: absolute;
+    right: 35px;
+    top: 8250px;
+}
+
+.footer img:hover{
+    padding: 5px;
+    border: 3px double navy;
+    border-radius: 7px;
+}
+
+.footer img:active {
+    opacity: 0.5;
+}
+
+
+
+
+
+
